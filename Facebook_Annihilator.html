@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p {
+        font-family : Segoe UI;
+        font-size : 20px;
+        color: #ffffff; 
+        margin-left: 50px;
+        margin-top: 100px;
+        }
+        body {
+        width:800px;height:200px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        }
+    </style>
+<head>
+</head>
+
+<body background="base.jpg">
+
+<!-- Array avec les activités + random --> 
+<p id="variable"></p>  
+    <script>        
+var activity = ["Activité 1", "Activité 2", "Activité 3"];        
+document.getElementById("variable").innerHTML = activity[Math.floor((Math.random() * 2) + 1)];
+    </script> 
+ 
+</body>   
+
+<!-- Ce texte animé peut être utile pour «l'apocalypse»
+<p><marquee behavior="alternate" direction="right" scrollamount="10">Bouncing text</marquee></p>
+--> 
+
+</html>
